@@ -14,7 +14,7 @@ class ENChromeDriver(object):
         self.login = login
         self.password = password
 
-    def close_chrome(self):
+    def close_browser(self):
         self.driver.quit()
 
     def login_to_en(self):
