@@ -9,5 +9,5 @@ GAME_ID = '29601'
 SESSIONS_DATA = {
     'team_1': ['jekafst_bot', 'jekabot_1412'],
     'team_2': ['prinncessa', 'h323232z'],
-    'team_3': ['Tvaruga', 'Thunderbird89'],
 }
+REFRESH_TRIES = 3
