@@ -3,7 +3,8 @@ from Const import URLS, DOMAIN, GAME_ID
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-REFRESH_PATH = '/html/body/div/div[1]/ul/li[1]/a'
+# REFRESH_PATH = '/html/body/div/div[1]/ul/li[1]/a'
+REFRESH_PATH = './/li[contains(@class, "refresh")]/a'
 
 
 class ENChromeDriver(object):
