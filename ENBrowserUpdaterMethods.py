@@ -33,8 +33,12 @@ def __refresh_page(driver, i, team):
             time.sleep(REFRESH_TIMEOUT)
             break
         except Exception:
-            logging.exception('%s: Обновление %s игры %s в движке команды %s НЕ ВЫПОЛНЕНО' % (datetime.utcnow() + timedelta(hours=3), str(i), driver.game_id, team))
-            if j != REFRESH_TRIES - 1:
-                time.sleep(1)
+            if driver.handle_robot_failsafe():
+                driver.open_game()
                 continue
+            else:
+                logging.exception('%s: Обновление %s игры %s в движке команды %s НЕ ВЫПОЛНЕНО' % (datetime.utcnow() + timedelta(hours=3), str(i), driver.game_id, team))
+                if j != REFRESH_TRIES - 1:
+                    time.sleep(1)
+                    continue
             time.sleep(REFRESH_TIMEOUT)

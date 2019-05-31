@@ -5,6 +5,7 @@ from selenium.webdriver.common.keys import Keys
 
 # REFRESH_PATH = '/html/body/div/div[1]/ul/li[1]/a'
 REFRESH_PATH = './/li[contains(@class, "refresh")]/a'
+ROBOT_PATH = './/center'
 
 
 class ENChromeDriver(object):
@@ -35,6 +36,14 @@ class ENChromeDriver(object):
     def refresh_level_page(self):
         refresh_elem = self.driver.find_element_by_xpath(REFRESH_PATH)
         refresh_elem.click()
+
+    def handle_robot_failsafe(self):
+        if "Your requests have been classified as robot's requests." in self.driver.find_element_by_xpath('.//body').text:
+            self.driver.get(self.domain + URLS['login_url_ending'])
+            self.login_to_en()
+            return True
+        else:
+            return False
 
 # if __name__ == '__main__':
 #     en_driver = ENChromeDriver()

@@ -2,7 +2,7 @@ URLS = {
     'game_url_ending': '/gameengines/encounter/play/',
     'login_url_ending': '/Login.aspx',
 }
-DEMO_REFRESH_COUNT = 20
+DEMO_REFRESH_COUNT = 200
 REFRESH_TIMEOUT = 15
 REFRESH_TRIES = 3
 ## ----------Fighting----------
