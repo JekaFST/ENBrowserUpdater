@@ -5,18 +5,22 @@ URLS = {
 DEMO_REFRESH_COUNT = 200
 REFRESH_TIMEOUT = 15
 REFRESH_TRIES = 3
-## ----------Fighting----------
-# DOMAIN = 'http://deadline.en.cx'
-# GAME_ID = '64824'
-# SESSIONS_DATA = {
-#     'team_1': ['jekafst_bot', 'jekabot_1412'],
-#     'team_2': ['prinncessa', 'h323232z'],
-# }
-
-# ----------Demo--------------
-DOMAIN = 'http://demo.en.cx'
-GAME_ID = '29601'
+DOMAIN = 'http://deadline.en.cx'
+GAME_ID = '64824'
 SESSIONS_DATA = {
-    'team_1': ['jekafst_bot', 'jekabot_1412'],
-    'team_2': ['prinncessa', 'h323232z'],
+    'kkn': ['mm_kkn', 'kkn123456'],
+    'sfz': ['mm_sfz', 'sfz123456'],
+    'selyavi': ['mm_clv', 'clv123456'],
+    'wtf': ['mm_wtf', 'wtf123456'],
+    'stb': ['mm_stb', 'stb123456'],
+    'babniki': ['mm_bb', 'bb123456'],
+    'prizraki': ['mm_pi', 'pi123456'],
+    'parovoz': ['mm_par', 'par123456'],
+    'megapolizzz': ['mm_mz', 'mz123456'],
+    'daigr_trr': ['mm_trr', 'trr123456'],
+    'bruce_li': ['mm_bl', 'bl123456'],
+    'nex': ['mm_nex', 'nex123456'],
+    '764': ['mm_764', 'qwe123456'],
+    '5_xirosim': ['mm_5x', '5x123456'],
+    '4_d': ['mm_4d', '4d123456'],
 }
